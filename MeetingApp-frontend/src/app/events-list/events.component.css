@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+}
+
+.left-section {
+  width: 70%;
+  padding: 20px;
+}
+
+.left-section ul {
+  list-style: none;
+}
+
+.left-section li {
+  margin-bottom: 10px;
+}
+
+.right-section {
+  width: 30%;
+  background-color: #FF5733; /* Colored background for the right section */
+}

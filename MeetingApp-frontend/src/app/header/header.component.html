@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="app-name">Your App Name</div>
+  <div class="options">
+    <a href="#">Profile</a>
+    <a href="#">Create event</a>
+    <a href="#">Option 3</a>
+    <a href="#">Option 4</a>
+  </div>
+  <div class="login-register">
+    <ul>
+      <li><a routerLink="login" routerLinkActive="active">Login</a></li>
+      <li><a routerLink="register" routerLinkActive="active">Register</a></li>
+      <li *ngIf="isAuthenticated"><a (click)="onLogout()">Logout</a></li>
+    </ul>
+  </div>
+</div>
