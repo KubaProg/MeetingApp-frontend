@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable, OnInit} from '@angular/core';
 import {UserModel} from "../shared/user.model";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {BehaviorSubject, catchError, tap, throwError} from "rxjs";
@@ -11,6 +11,8 @@ import {environment} from "../environments/environment";
 export class AuthService {
 
   user = new BehaviorSubject<UserModel>(null!);
+  redirectUrl!: string;
+
   constructor(private http: HttpClient, private router: Router) {}
 
   addUser(usermodel : UserModel){
@@ -85,5 +87,6 @@ export class AuthService {
 
     this.user.next(loadedUser);
   }
+
 
 }

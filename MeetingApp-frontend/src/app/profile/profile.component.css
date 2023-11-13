@@ -1,0 +1,98 @@
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #1845ad, #f09819);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.profile-section {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(8, 7, 16, 0.6);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-edit {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-form {
+  width: 100%; /* Adjust the width as needed */
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(8, 7, 16, 0.6);
+  padding: 30px 25px;
+}
+
+.profile-form * {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.profile-form h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: center;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-form input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 8px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.profile-form ::placeholder {
+  color: #e5e5e5;
+}
+
+.profile-form button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disabled-button {
+  background-color: grey;
+}

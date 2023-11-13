@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit{
     this.authService.logInUser(this.logForm.value).subscribe(
       () => {
         this.snackBar.openSnackBar("Successfully logged in")
-        this.router.navigate([''])
+        this.router.navigate([this.authService.redirectUrl])
       },
       error => {
         this.snackBar.openSnackBar(error);

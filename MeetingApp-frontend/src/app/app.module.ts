@@ -17,6 +17,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {EventsService} from "./services/events.service";
 import { CreateEventComponent } from './create-event/create-event.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CreateEventComponent } from './create-event/create-event.component';
     RegisterComponent,
     EventsComponent,
     EventItemComponent,
-    CreateEventComponent
+    CreateEventComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -4,14 +4,17 @@ import {EventsComponent} from "./events-list/events.component";
 import {LoginComponent} from "./auth/login/login.component";
 import {RegisterComponent} from "./auth/register/register.component";
 import {CreateEventComponent} from "./create-event/create-event.component";
+import {AuthGuard} from "./auth/auth.guard";
+import {ProfileComponent} from "./profile/profile.component";
 
 const appRoutes: Routes = [
-  { path: '', component: EventsComponent },
   { path: 'login', component: LoginComponent, children: [
       // { path: ':id/:name', component: UserComponent }
     ] },
   {path: 'register', component: RegisterComponent},
-  {path: 'create', component: CreateEventComponent}
+  {path: 'create', component: CreateEventComponent, canActivate: [AuthGuard]},
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] , pathMatch: 'full' },
+  { path: '', component: EventsComponent , canActivate: [AuthGuard] , pathMatch: 'full' }
 
 ];
 
