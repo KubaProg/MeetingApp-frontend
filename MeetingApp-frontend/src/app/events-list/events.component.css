@@ -19,3 +19,7 @@
   width: 30%;
   background-color: #FF5733; /* Colored background for the right section */
 }
+
+.disabled-button{
+  background-color: grey;
+}

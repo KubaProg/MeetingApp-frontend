@@ -5,14 +5,14 @@ export class EventModel {
   date: string;
   startTime: string;
   endTime: string;
-  locationId: number;
+  location_id: number;
 
-  constructor(name: string, description: string, date: string, startTime: string, endTime: string, locationId: number) {
+  constructor(name: string, description: string, date: string, startTime: string, endTime: string, location_id: number) {
     this.name = name;
     this.description = description;
     this.date = date;
     this.startTime = startTime;
     this.endTime = endTime;
-    this.locationId = locationId;
+    this.location_id = location_id;
   }
 }

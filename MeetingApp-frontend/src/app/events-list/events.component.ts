@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {EventsService} from "./events.service";
+import {EventsService} from "../services/events.service";
 import {Subscription} from "rxjs";
 import {EventModel} from "../shared/event.model";
 
@@ -27,4 +27,6 @@ export class EventsComponent implements OnInit, OnDestroy{
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
+
+
 }

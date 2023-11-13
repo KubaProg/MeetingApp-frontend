@@ -12,10 +12,11 @@ import { EventItemComponent } from './events-list/event-item/event-item.componen
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from "@angular/common/http";
-import {AuthInterceptorService} from "./auth/auth.interceptor.service";
+import {AuthInterceptorService} from "./services/auth.interceptor.service";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {EventsService} from "./events-list/events.service";
+import {EventsService} from "./services/events.service";
+import { CreateEventComponent } from './create-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {EventsService} from "./events-list/events.service";
     LoginComponent,
     RegisterComponent,
     EventsComponent,
-    EventItemComponent
+    EventItemComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,6 @@ import {EventsService} from "./events-list/events.service";
     BrowserAnimationsModule
   ],
   providers: [
-    EventsService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,

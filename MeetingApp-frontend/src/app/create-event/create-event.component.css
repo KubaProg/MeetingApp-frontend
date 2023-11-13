@@ -1,4 +1,4 @@
-.registration-form {
+.event-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   background: linear-gradient(to bottom, #1845ad, #f09819); /* Replace with your desired background */
 }
 
-.registration-form form {
+.event-form form {
   width: 300px; /* Reduced the width to make it smaller */
   background-color: rgba(255, 255, 255, 0.13);
   border-radius: 10px;
@@ -16,7 +16,7 @@
   padding: 30px 25px; /* Reduced padding */
 }
 
-.registration-form form * {
+.event-form form * {
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   letter-spacing: 0.5px;
@@ -24,21 +24,21 @@
   border: none;
 }
 
-.registration-form form h3 {
+.event-form form h3 {
   font-size: 28px; /* Reduced font size */
   font-weight: 500;
   line-height: 38px; /* Reduced line height */
   text-align: center;
 }
 
-.registration-form form label {
+.event-form form label {
   display: block;
   margin-top: 20px; /* Reduced margin-top */
   font-size: 14px; /* Reduced font size */
   font-weight: 500;
 }
 
-.registration-form form input {
+.event-form form input {
   display: block;
   height: 40px; /* Reduced height */
   width: 100%;
@@ -50,11 +50,11 @@
   font-weight: 300;
 }
 
-.registration-form form ::placeholder {
+.event-form form ::placeholder {
   color: #e5e5e5;
 }
 
-.registration-form form button {
+.event-form form button {
   margin-top: 40px; /* Reduced margin-top */
   width: 100%;
   background-color: #ffffff;

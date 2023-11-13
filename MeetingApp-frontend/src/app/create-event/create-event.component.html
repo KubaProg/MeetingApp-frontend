@@ -1,0 +1,27 @@
+<div class="event-form">
+  <form [formGroup]="createEventForm" (ngSubmit)="onCreateEvent()">
+    <h3>Create Event</h3>
+
+    <label for="name">Event Name</label>
+    <input type="text" placeholder="Event Name" id="name" formControlName="name">
+
+    <label for="description">Event Description</label>
+    <input type="text" placeholder="Event Description" id="description" formControlName="description">
+
+    <label for="date">Event Date</label>
+    <input type="text" placeholder="Event Date" id="date" formControlName="date">
+
+    <label for="startTime">Start Time</label>
+    <input type="text" placeholder="Start Time" id="startTime" formControlName="startTime">
+
+    <label for="endTime">End Time</label>
+    <input type="text" placeholder="End Time" id="endTime" formControlName="endTime">
+
+    <label for="locationId">Location ID</label>
+    <input type="number" placeholder="Location ID" id="locationId" formControlName="location_id">
+
+    <button type="submit" [disabled]="!createEventForm.valid" [ngClass]="{'disabled-button': !createEventForm.valid}">
+      Create Event
+    </button>
+  </form>
+</div>
